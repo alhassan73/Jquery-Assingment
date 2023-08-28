@@ -1,0 +1,93 @@
+:root {
+  --color-one: #fff;
+  --color-two: #000;
+  --font-one: "Poppins", sans-serif;
+  --font-size: 16px;
+}
+* {
+  font-family: var(--font-one);
+  text-decoration: none !important;
+  list-style: none !important;
+}
+h1 {
+  font-size: 3.75rem;
+}
+header {
+  background: url(../assets/events-heavenly-header.jpg) no-repeat center;
+  background-size: 100% 100%;
+}
+header .overlay {
+  background-color: rgba(233, 74, 79, 0.518);
+}
+header .container-fluid {
+  height: 100vh;
+}
+header h3 {
+  font-size: calc(var(--font-size) * 1.5);
+}
+#sideMenuContainer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+.side-content ul {
+  gap: 3.125rem;
+  padding: 3.125rem;
+  font-size: calc(var(--font-size) * 1.2);
+}
+#sideMenuContainer a,
+#sideMenuContainer .fa-xmark {
+  color: var(--color-one);
+  transition: 0.5s;
+}
+#sideMenuContainer a:hover,
+#sideMenuContainer .fa-xmark:hover {
+  color: rgba(214, 15, 21, 0.842);
+  cursor: pointer;
+}
+#menuBtn {
+  cursor: pointer;
+}
+.event-details {
+  width: 75%;
+}
+.event-details h3 {
+  background-color: #e68285;
+  padding-block: 0.625rem;
+  font-size: calc(var(--font-size) * 1.5);
+  color: var(--color-one);
+  margin: 0;
+}
+.event-details .slide:nth-child(4),
+.event-details .slide:nth-child(6),
+.event-details .slide:nth-child(8) {
+  display: none;
+}
+#duration {
+  background: url(../assets/invitation-2508607__340.jpg) no-repeat center;
+  background-size: 100% 100%;
+}
+#duration .overlay {
+  background-color: rgba(233, 74, 79, 0.518);
+}
+.fa-brands {
+  transition: 0.7s;
+}
+.fa-brands:hover {
+  background-color: rgb(208, 9, 9);
+  color: var(--color-one);
+  border: 1px solid var(--color-one) !important;
+}
+textarea {
+  resize: vertical;
+}
+
+@media (min-width: 768px) {
+  .days,
+  .hours,
+  .mins,
+  .secs{
+    width: 100% !important;
+  }
+}

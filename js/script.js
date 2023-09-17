@@ -31,7 +31,7 @@ $(function () {
   });
   //event countdown
   let ended = setInterval(function () {
-    let eventTime = new Date("Sep 15, 2023 18:00:00").getTime();
+    let eventTime = new Date("Sep 15, 2024 18:00:00").getTime();
     let now = new Date().getTime();
     let timeDiff = eventTime - now;
     let days = Math.floor(timeDiff / (24 * 60 * 60 * 1000));
